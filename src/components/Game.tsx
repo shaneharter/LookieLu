@@ -41,7 +41,7 @@ export function Game({ level }: GameProps) {
     : elapsedTime;
 
   return (
-    <div className="flex flex-col h-screen bg-gray-900 overflow-hidden">
+    <div className="flex flex-col h-[100dvh] bg-gray-900 overflow-hidden">
       {/* Header */}
       <header className="relative flex items-center justify-between px-4 py-3 bg-gradient-to-r from-slate-900 to-blue-950 shadow-lg overflow-hidden">
         {/* Diagonal Stripes Pattern */}

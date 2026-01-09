@@ -15,7 +15,7 @@ export function ItemList({ items, foundItems, sceneImage }: ItemListProps) {
   const progress = totalCount > 0 ? (foundCount / totalCount) * 100 : 0;
 
   return (
-    <div className="relative bg-gradient-to-t from-slate-950 to-blue-950 p-4 shadow-lg border-t-4 border-blue-700 overflow-hidden">
+    <div className="relative bg-gradient-to-t from-slate-950 to-blue-950 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-lg border-t-4 border-blue-700 overflow-hidden">
       {/* Diagonal Stripes Pattern */}
       <div
         className="absolute inset-0 opacity-10"
