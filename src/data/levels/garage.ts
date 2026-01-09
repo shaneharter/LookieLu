@@ -74,7 +74,7 @@ export const garageItems: HiddenItem[] = [
 
 export const garageLevel: Level = {
   id: 'garage',
-  name: 'Dusty Garage',
+  name: 'LookieLu',
   description: 'Find all the hidden items in this cluttered garage!',
   backgroundImage: '/garage-photo.png',
   items: garageItems,
