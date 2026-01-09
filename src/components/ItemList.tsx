@@ -15,12 +15,25 @@ export function ItemList({ items, foundItems, sceneImage }: ItemListProps) {
   const progress = totalCount > 0 ? (foundCount / totalCount) * 100 : 0;
 
   return (
-    <div className="bg-gradient-to-t from-amber-900 to-amber-800 p-4 shadow-lg border-t-4 border-amber-600">
+    <div className="relative bg-gradient-to-t from-slate-950 to-blue-950 p-4 shadow-lg border-t-4 border-blue-700 overflow-hidden">
+      {/* Diagonal Stripes Pattern */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255,255,255,0.05) 10px,
+            rgba(255,255,255,0.05) 20px
+          )`,
+        }}
+      />
       {/* Progress Bar */}
-      <div className="mb-3">
-        <div className="relative w-full h-8 bg-amber-950 rounded-full overflow-hidden shadow-inner">
+      <div className="relative mb-3">
+        <div className="relative w-full h-8 bg-slate-950/60 rounded-full overflow-hidden shadow-inner">
           <div
-            className="h-full bg-gradient-to-r from-amber-400 to-amber-300 rounded-full transition-all duration-500 ease-out"
+            className="h-full bg-gradient-to-r from-blue-400/80 to-cyan-400/80 rounded-full transition-all duration-500 ease-out"
             style={{ width: `${progress}%` }}
           />
           <div className="absolute inset-0 flex items-center justify-center">
@@ -30,7 +43,7 @@ export function ItemList({ items, foundItems, sceneImage }: ItemListProps) {
       </div>
 
       {/* Item Thumbnails */}
-      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+      <div className="relative flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
         {items.map(item => {
           const isFound = foundItems.includes(item.id);
 
@@ -40,7 +53,7 @@ export function ItemList({ items, foundItems, sceneImage }: ItemListProps) {
           return (
             <div
               key={item.id}
-              className="relative flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden bg-amber-700/80 shadow-md"
+              className="relative flex-shrink-0 w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden bg-blue-800/80 shadow-md"
             >
               {/* Sprite thumbnail or cropped scene thumbnail */}
               {item.sprite ? (

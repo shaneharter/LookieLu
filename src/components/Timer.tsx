@@ -17,8 +17,8 @@ export function Timer({ elapsedTime, isRunning }: TimerProps) {
     <div
       className={`text-2xl font-bold font-mono px-4 py-2 rounded-lg ${
         isRunning
-          ? 'bg-amber-500 text-amber-900 animate-pulse'
-          : 'bg-amber-600 text-white'
+          ? 'bg-blue-500 text-white animate-pulse'
+          : 'bg-blue-800 text-blue-100'
       }`}
     >
       {formatTime(elapsedTime)}

@@ -43,12 +43,25 @@ export function Game({ level }: GameProps) {
   return (
     <div className="flex flex-col h-screen bg-gray-900 overflow-hidden">
       {/* Header */}
-      <header className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-amber-700 to-amber-800 shadow-lg">
-        <div className="flex items-center gap-3">
+      <header className="relative flex items-center justify-between px-4 py-3 bg-gradient-to-r from-slate-900 to-blue-950 shadow-lg overflow-hidden">
+        {/* Diagonal Stripes Pattern */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `repeating-linear-gradient(
+              45deg,
+              transparent,
+              transparent 10px,
+              rgba(255,255,255,0.05) 10px,
+              rgba(255,255,255,0.05) 20px
+            )`,
+          }}
+        />
+        <div className="relative flex items-center gap-3">
           <div className="text-3xl">🔍</div>
           <div>
-            <h1 className="text-xl font-bold text-amber-100">{level.name}</h1>
-            <p className="text-xs text-amber-300">Find all the hidden items!</p>
+            <h1 className="text-xl font-bold text-blue-100">LookieLu</h1>
+            <p className="text-xs text-blue-300">Level: {level.name}</p>
           </div>
         </div>
 

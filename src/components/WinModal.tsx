@@ -102,7 +102,7 @@ export function WinModal({ levelId, levelName, time, onPlayAgain }: WinModalProp
           <h2 className="text-3xl font-bold text-white drop-shadow-lg">
             {isNewRecord ? 'New Record!' : 'Great Job!'}
           </h2>
-          <p className="text-green-100 mt-1">You cleaned up the {levelName}!</p>
+          <p className="text-green-100 mt-1">You completed {levelName}!</p>
         </div>
 
         {/* Time Display */}
