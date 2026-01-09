@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 150">
+  <defs>
+    <linearGradient id="rakeHandle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8d6e63"/>
+      <stop offset="50%" style="stop-color:#a1887f"/>
+      <stop offset="100%" style="stop-color:#8d6e63"/>
+    </linearGradient>
+  </defs>
+  <!-- Handle -->
+  <rect x="20" y="0" width="10" height="120" rx="2" fill="url(#rakeHandle)"/>
+  <!-- Head bar -->
+  <rect x="5" y="115" width="40" height="8" rx="2" fill="#455a64"/>
+  <!-- Tines -->
+  <rect x="8" y="123" width="3" height="25" rx="1" fill="#546e7a"/>
+  <rect x="15" y="123" width="3" height="27" rx="1" fill="#546e7a"/>
+  <rect x="22" y="123" width="3" height="28" rx="1" fill="#546e7a"/>
+  <rect x="29" y="123" width="3" height="27" rx="1" fill="#546e7a"/>
+  <rect x="36" y="123" width="3" height="25" rx="1" fill="#546e7a"/>
+</svg>

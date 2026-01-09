@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 80">
+  <defs>
+    <linearGradient id="lanternGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#37474f"/>
+      <stop offset="50%" style="stop-color:#546e7a"/>
+      <stop offset="100%" style="stop-color:#37474f"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fff9c4"/>
+      <stop offset="50%" style="stop-color:#ffeb3b"/>
+      <stop offset="100%" style="stop-color:#ff9800"/>
+    </radialGradient>
+  </defs>
+  <!-- Handle -->
+  <path d="M15,8 Q25,-5 35,8" fill="none" stroke="#455a64" stroke-width="4"/>
+  <!-- Top cap -->
+  <rect x="10" y="5" width="30" height="10" rx="2" fill="url(#lanternGrad)"/>
+  <!-- Glass body -->
+  <rect x="8" y="15" width="34" height="45" rx="3" fill="url(#glowGrad)" opacity="0.8"/>
+  <rect x="8" y="15" width="34" height="45" rx="3" fill="none" stroke="#455a64" stroke-width="2"/>
+  <!-- Frame lines -->
+  <line x1="8" y1="25" x2="42" y2="25" stroke="#455a64" stroke-width="2"/>
+  <line x1="8" y1="50" x2="42" y2="50" stroke="#455a64" stroke-width="2"/>
+  <line x1="25" y1="15" x2="25" y2="60" stroke="#455a64" stroke-width="1"/>
+  <!-- Bottom -->
+  <rect x="10" y="60" width="30" height="12" rx="2" fill="url(#lanternGrad)"/>
+  <!-- Flame -->
+  <ellipse cx="25" cy="40" rx="6" ry="10" fill="#ff9800"/>
+  <ellipse cx="25" cy="38" rx="3" ry="6" fill="#ffeb3b"/>
+</svg>

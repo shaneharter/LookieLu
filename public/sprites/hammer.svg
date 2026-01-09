@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40">
+  <defs>
+    <linearGradient id="hammerHead" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#78909c"/>
+      <stop offset="50%" style="stop-color:#546e7a"/>
+      <stop offset="100%" style="stop-color:#37474f"/>
+    </linearGradient>
+    <linearGradient id="hammerHandle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8d6e63"/>
+      <stop offset="50%" style="stop-color:#a1887f"/>
+      <stop offset="100%" style="stop-color:#8d6e63"/>
+    </linearGradient>
+  </defs>
+  <!-- Handle -->
+  <rect x="30" y="15" width="50" height="10" rx="2" fill="url(#hammerHandle)"/>
+  <!-- Head -->
+  <rect x="0" y="5" width="35" height="30" rx="3" fill="url(#hammerHead)"/>
+  <!-- Claw -->
+  <path d="M0,8 L-5,0 M0,12 L-8,5" stroke="#37474f" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

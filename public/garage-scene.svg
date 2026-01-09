@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200">
+  <defs>
+    <!-- Wood grain pattern -->
+    <pattern id="woodGrain" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#8B4513"/>
+      <line x1="0" y1="10" x2="40" y2="10" stroke="#7a3d10" stroke-width="1"/>
+      <line x1="0" y1="25" x2="40" y2="25" stroke="#9a5523" stroke-width="0.5"/>
+      <line x1="0" y1="35" x2="40" y2="35" stroke="#7a3d10" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Concrete floor pattern -->
+    <pattern id="concrete" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#606060"/>
+      <rect x="0" y="0" width="50" height="50" fill="#585858"/>
+      <rect x="50" y="50" width="50" height="50" fill="#585858"/>
+    </pattern>
+
+    <!-- Shelf wood pattern -->
+    <linearGradient id="shelfWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A0522D"/>
+      <stop offset="50%" style="stop-color:#8B4513"/>
+      <stop offset="100%" style="stop-color:#654321"/>
+    </linearGradient>
+
+    <!-- Metal gradient -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0"/>
+      <stop offset="50%" style="stop-color:#A0A0A0"/>
+      <stop offset="100%" style="stop-color:#808080"/>
+    </linearGradient>
+
+    <!-- Truck bed gradient -->
+    <linearGradient id="truckBed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A4A4A"/>
+      <stop offset="100%" style="stop-color:#2A2A2A"/>
+    </linearGradient>
+
+    <!-- Wall gradient -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9B896"/>
+      <stop offset="100%" style="stop-color:#B8A082"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background - Garage walls -->
+  <rect width="1600" height="1200" fill="url(#wallGrad)"/>
+
+  <!-- Back wall darker section -->
+  <rect x="0" y="0" width="1600" height="500" fill="#B0A070"/>
+
+  <!-- Pegboard on back wall -->
+  <rect x="180" y="80" width="450" height="380" fill="#D4C4A8" rx="5"/>
+  <!-- Pegboard holes pattern -->
+  <g fill="#8B7355" opacity="0.5">
+    <g id="pegRow">
+      <circle cx="200" cy="100" r="3"/>
+      <circle cx="230" cy="100" r="3"/>
+      <circle cx="260" cy="100" r="3"/>
+      <circle cx="290" cy="100" r="3"/>
+      <circle cx="320" cy="100" r="3"/>
+      <circle cx="350" cy="100" r="3"/>
+      <circle cx="380" cy="100" r="3"/>
+      <circle cx="410" cy="100" r="3"/>
+      <circle cx="440" cy="100" r="3"/>
+      <circle cx="470" cy="100" r="3"/>
+      <circle cx="500" cy="100" r="3"/>
+      <circle cx="530" cy="100" r="3"/>
+      <circle cx="560" cy="100" r="3"/>
+      <circle cx="590" cy="100" r="3"/>
+    </g>
+    <use href="#pegRow" y="30"/>
+    <use href="#pegRow" y="60"/>
+    <use href="#pegRow" y="90"/>
+    <use href="#pegRow" y="120"/>
+    <use href="#pegRow" y="150"/>
+    <use href="#pegRow" y="180"/>
+    <use href="#pegRow" y="210"/>
+    <use href="#pegRow" y="240"/>
+    <use href="#pegRow" y="270"/>
+    <use href="#pegRow" y="300"/>
+    <use href="#pegRow" y="330"/>
+  </g>
+
+  <!-- Window on back wall -->
+  <rect x="700" y="80" width="220" height="170" fill="#87CEEB" stroke="#5D4037" stroke-width="12"/>
+  <line x1="810" y1="80" x2="810" y2="250" stroke="#5D4037" stroke-width="6"/>
+  <line x1="700" y1="165" x2="920" y2="165" stroke="#5D4037" stroke-width="6"/>
+  <!-- Sky through window -->
+  <rect x="706" y="86" width="98" height="73" fill="#87CEEB"/>
+  <rect x="816" y="86" width="98" height="73" fill="#87CEEB"/>
+  <rect x="706" y="171" width="98" height="73" fill="#87CEEB"/>
+  <rect x="816" y="171" width="98" height="73" fill="#87CEEB"/>
+  <!-- Clouds -->
+  <ellipse cx="750" cy="110" rx="20" ry="10" fill="white" opacity="0.8"/>
+  <ellipse cx="880" cy="200" rx="25" ry="12" fill="white" opacity="0.7"/>
+
+  <!-- Fluorescent light fixture -->
+  <rect x="600" y="20" width="450" height="35" fill="#E0E0E0" stroke="#999" stroke-width="2"/>
+  <rect x="620" y="28" width="410" height="22" fill="#FFFEF5"/>
+  <ellipse cx="825" cy="39" rx="200" ry="8" fill="white" opacity="0.3"/>
+
+  <!-- Floor -->
+  <rect x="0" y="700" width="1600" height="500" fill="url(#concrete)"/>
+
+  <!-- Floor shadow from truck -->
+  <ellipse cx="750" cy="850" rx="350" ry="40" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Old Truck Bed in center -->
+  <g transform="translate(450, 420)">
+    <!-- Truck bed base -->
+    <rect x="0" y="100" width="550" height="220" fill="url(#truckBed)" rx="10"/>
+    <!-- Truck bed sides -->
+    <rect x="-15" y="40" width="25" height="280" fill="#3A3A3A" rx="5"/>
+    <rect x="540" y="40" width="25" height="280" fill="#3A3A3A" rx="5"/>
+    <rect x="0" y="40" width="550" height="70" fill="#3A3A3A" rx="5"/>
+    <!-- Rust spots -->
+    <ellipse cx="120" cy="220" rx="35" ry="25" fill="#8B4513" opacity="0.35"/>
+    <ellipse cx="380" cy="200" rx="30" ry="18" fill="#8B4513" opacity="0.25"/>
+    <ellipse cx="490" cy="270" rx="25" ry="30" fill="#8B4513" opacity="0.3"/>
+    <!-- Wheels -->
+    <circle cx="90" cy="320" r="55" fill="#1a1a1a"/>
+    <circle cx="90" cy="320" r="38" fill="#2d2d2d"/>
+    <circle cx="90" cy="320" r="12" fill="#4a4a4a"/>
+    <circle cx="460" cy="320" r="55" fill="#1a1a1a"/>
+    <circle cx="460" cy="320" r="38" fill="#2d2d2d"/>
+    <circle cx="460" cy="320" r="12" fill="#4a4a4a"/>
+    <!-- Tire treads hint -->
+    <circle cx="90" cy="320" r="48" fill="none" stroke="#222" stroke-width="2"/>
+    <circle cx="460" cy="320" r="48" fill="none" stroke="#222" stroke-width="2"/>
+  </g>
+
+  <!-- Wooden Shelves on left wall -->
+  <g transform="translate(40, 220)">
+    <!-- Shelf supports -->
+    <rect x="0" y="0" width="18" height="440" fill="#5D3A1A"/>
+    <rect x="280" y="0" width="18" height="440" fill="#5D3A1A"/>
+    <!-- Shelf boards -->
+    <rect x="-15" y="0" width="330" height="22" fill="url(#shelfWood)"/>
+    <rect x="-15" y="140" width="330" height="22" fill="url(#shelfWood)"/>
+    <rect x="-15" y="280" width="330" height="22" fill="url(#shelfWood)"/>
+    <rect x="-15" y="420" width="330" height="22" fill="url(#shelfWood)"/>
+  </g>
+
+  <!-- Metal shelving unit on right -->
+  <g transform="translate(1150, 250)">
+    <!-- Vertical supports -->
+    <rect x="0" y="0" width="12" height="550" fill="url(#metalGrad)"/>
+    <rect x="280" y="0" width="12" height="550" fill="url(#metalGrad)"/>
+    <!-- Shelves -->
+    <rect x="-8" y="0" width="310" height="10" fill="#A8A8A8"/>
+    <rect x="-8" y="130" width="310" height="10" fill="#A8A8A8"/>
+    <rect x="-8" y="260" width="310" height="10" fill="#A8A8A8"/>
+    <rect x="-8" y="390" width="310" height="10" fill="#A8A8A8"/>
+    <rect x="-8" y="540" width="310" height="10" fill="#A8A8A8"/>
+  </g>
+
+  <!-- Cardboard boxes scattered around -->
+  <!-- Box 1 - large on floor left -->
+  <g transform="translate(180, 720)">
+    <rect width="130" height="110" fill="#C4A574"/>
+    <rect y="0" width="130" height="18" fill="#A08554"/>
+    <line x1="65" y1="18" x2="65" y2="110" stroke="#8B7355" stroke-width="2"/>
+    <text x="65" y="70" text-anchor="middle" font-size="16" fill="#666" font-family="Arial">FRAGILE</text>
+  </g>
+
+  <!-- Box 2 - medium stacked -->
+  <g transform="translate(200, 630)">
+    <rect width="90" height="80" fill="#D4B484"/>
+    <rect y="0" width="90" height="14" fill="#B49464"/>
+  </g>
+
+  <!-- Box 3 - small on shelf -->
+  <g transform="translate(100, 175)">
+    <rect width="70" height="50" fill="#C4A574"/>
+    <rect y="0" width="70" height="10" fill="#A08554"/>
+  </g>
+
+  <!-- Box 4 - on truck bed -->
+  <g transform="translate(520, 480)">
+    <rect width="80" height="60" fill="#BFA070"/>
+    <rect y="0" width="80" height="12" fill="#9F8050"/>
+  </g>
+
+  <!-- Tarp over items in truck bed -->
+  <path d="M470,500 Q620,460 780,500 Q800,530 780,580 Q620,620 470,580 Q450,540 470,500" fill="#2F4F4F" opacity="0.6"/>
+  <path d="M475,505 Q620,470 775,505" fill="none" stroke="#1F3F3F" stroke-width="2"/>
+
+  <!-- Cobwebs in corners -->
+  <g opacity="0.4" stroke="#DDD" fill="none" stroke-width="0.5">
+    <path d="M0,0 Q60,25 25,90"/>
+    <path d="M0,0 Q40,40 75,25"/>
+    <path d="M0,0 Q20,50 5,95"/>
+    <path d="M1600,0 Q1540,30 1565,95"/>
+    <path d="M1600,0 Q1560,50 1595,90"/>
+  </g>
+
+  <!-- Stains on floor -->
+  <ellipse cx="420" cy="950" rx="50" ry="25" fill="#333" opacity="0.15"/>
+  <ellipse cx="1100" cy="1000" rx="40" ry="20" fill="#333" opacity="0.1"/>
+  <ellipse cx="750" cy="1050" rx="60" ry="25" fill="#2A2A2A" opacity="0.12"/>
+
+  <!-- Dust particles (decorative) -->
+  <g fill="#DDD" opacity="0.4">
+    <circle cx="300" cy="180" r="2"/>
+    <circle cx="520" cy="350" r="1.5"/>
+    <circle cx="1250" cy="220" r="2"/>
+    <circle cx="950" cy="380" r="1"/>
+    <circle cx="150" cy="450" r="1.5"/>
+    <circle cx="1400" cy="350" r="1"/>
+  </g>
+
+  <!-- Hanging hooks on pegboard (without items) -->
+  <g fill="#555">
+    <rect x="220" y="150" width="6" height="35" rx="1"/>
+    <rect x="300" y="160" width="6" height="30" rx="1"/>
+    <rect x="380" y="145" width="6" height="40" rx="1"/>
+    <rect x="460" y="155" width="6" height="32" rx="1"/>
+    <rect x="540" y="150" width="6" height="38" rx="1"/>
+  </g>
+
+  <!-- Small details - outlet on wall -->
+  <rect x="1100" y="400" width="30" height="45" fill="#F5F5F0" rx="3"/>
+  <circle cx="1110" cy="415" r="4" fill="#333"/>
+  <circle cx="1120" cy="415" r="4" fill="#333"/>
+  <circle cx="1115" cy="435" r="3" fill="#333"/>
+
+  <!-- Vent on wall -->
+  <rect x="1400" y="150" width="80" height="60" fill="#E0E0D8" rx="2"/>
+  <g stroke="#AAA" stroke-width="2">
+    <line x1="1410" y1="165" x2="1470" y2="165"/>
+    <line x1="1410" y1="180" x2="1470" y2="180"/>
+    <line x1="1410" y1="195" x2="1470" y2="195"/>
+  </g>
+</svg>

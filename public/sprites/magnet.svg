@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 60">
+  <defs>
+    <linearGradient id="magnetGray" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#78909c"/>
+      <stop offset="50%" style="stop-color:#90a4ae"/>
+      <stop offset="100%" style="stop-color:#78909c"/>
+    </linearGradient>
+  </defs>
+  <!-- U-shape body -->
+  <path d="M5,0 L5,40 Q5,55 25,55 Q45,55 45,40 L45,0 L35,0 L35,38 Q35,45 25,45 Q15,45 15,38 L15,0 Z" fill="url(#magnetGray)"/>
+  <!-- Red end -->
+  <rect x="5" y="0" width="10" height="18" fill="#e53935"/>
+  <!-- Blue end -->
+  <rect x="35" y="0" width="10" height="18" fill="#1e88e5"/>
+  <!-- Pole labels -->
+  <text x="10" y="12" text-anchor="middle" font-size="8" font-weight="bold" fill="white">N</text>
+  <text x="40" y="12" text-anchor="middle" font-size="8" font-weight="bold" fill="white">S</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 50">
+  <defs>
+    <linearGradient id="gloveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffa726"/>
+      <stop offset="100%" style="stop-color:#f57c00"/>
+    </linearGradient>
+  </defs>
+  <!-- Left glove -->
+  <path d="M5,45 L5,25 L8,15 L12,15 L14,22 L16,12 L20,12 L22,22 L24,10 L28,10 L30,22 L32,12 L36,12 L36,25 L40,45 Z" fill="url(#gloveGrad)" stroke="#ef6c00" stroke-width="1"/>
+  <!-- Right glove -->
+  <path d="M50,45 L50,25 L53,15 L57,15 L59,22 L61,12 L65,12 L67,22 L69,10 L73,10 L75,22 L77,12 L81,12 L81,25 L85,45 Z" fill="url(#gloveGrad)" stroke="#ef6c00" stroke-width="1"/>
+  <!-- Cuffs -->
+  <rect x="5" y="40" width="35" height="8" fill="#8d6e63"/>
+  <rect x="50" y="40" width="35" height="8" fill="#8d6e63"/>
+</svg>

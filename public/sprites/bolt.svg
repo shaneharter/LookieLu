@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 40">
+  <defs>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#78909c"/>
+      <stop offset="50%" style="stop-color:#90a4ae"/>
+      <stop offset="100%" style="stop-color:#78909c"/>
+    </linearGradient>
+  </defs>
+  <!-- Hex head -->
+  <polygon points="12.5,2 22,6 22,14 12.5,18 3,14 3,6" fill="url(#boltGrad)" stroke="#546e7a" stroke-width="1"/>
+  <!-- Shaft -->
+  <rect x="8" y="16" width="9" height="22" fill="url(#boltGrad)"/>
+  <!-- Threads -->
+  <line x1="8" y1="22" x2="17" y2="22" stroke="#546e7a" stroke-width="1"/>
+  <line x1="8" y1="27" x2="17" y2="27" stroke="#546e7a" stroke-width="1"/>
+  <line x1="8" y1="32" x2="17" y2="32" stroke="#546e7a" stroke-width="1"/>
+</svg>
