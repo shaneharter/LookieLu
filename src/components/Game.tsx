@@ -11,9 +11,10 @@ import { Level } from '@/types/game';
 
 interface GameProps {
   level: Level;
+  onBack?: () => void;
 }
 
-export function Game({ level }: GameProps) {
+export function Game({ level, onBack }: GameProps) {
   const {
     gameState,
     elapsedTime,
@@ -58,6 +59,16 @@ export function Game({ level }: GameProps) {
           }}
         />
         <div className="relative flex items-center gap-3">
+          {onBack && (
+            <button
+              onClick={onBack}
+              className="p-2 rounded-lg bg-blue-800/50 hover:bg-blue-700/50 transition-colors"
+            >
+              <svg className="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          )}
           <div className="text-3xl">🔍</div>
           <div>
             <h1 className="text-xl font-bold text-blue-100">LookieLu</h1>
